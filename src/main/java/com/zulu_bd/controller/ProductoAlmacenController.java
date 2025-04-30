@@ -91,7 +91,7 @@ public class ProductoAlmacenController {
             @RequestParam int cantidad,
             @RequestParam int clienteId,
             @RequestParam int productoId) {
-        String resultado = productoAlmacenService.validarProducto(cantidad, clienteId,productoId);
+        String resultado = productoAlmacenService.validarProducto(cantidad, clienteId, productoId);
         return ResponseEntity.ok(resultado);
     }
 

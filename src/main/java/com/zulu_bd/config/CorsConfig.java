@@ -18,6 +18,10 @@ public class CorsConfig {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.setAllowCredentials(true);
         corsConfiguration.addAllowedOrigin("http://localhost:5173");
+
+        corsConfiguration.addAllowedOrigin("http://localhost:5174");
+        corsConfiguration.addAllowedOrigin("http://localhost:5175");
+
         corsConfiguration.addAllowedHeader("Content-Type"); // You can add more headers if needed
         corsConfiguration.addAllowedHeader("Authorization");
         corsConfiguration.addAllowedHeader("Content-Type");
